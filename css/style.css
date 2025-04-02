@@ -1,0 +1,76 @@
+/* Font Inter wird direkt im CSS importiert, nicht nötig in html */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 
+Die festgelegten Farben werden so verwendet:
+
+.beispielclass {
+    background-color: var(--offwhite);
+}
+
+Achtung, nicht var() vergessen, darkgrey/darkgrey ist NICHT var(--darkgrey)
+*/
+:root {
+  --offwhite: #f5f5f5;
+  --darkgrey: #555555;
+  --gelb: #e3d87f;
+  --blau: #98e0f0;
+  --lachs: #f6c99c;
+  --formularfeld: #f5f5f5cc;
+  --suchfeld: #f5f5f5cc;
+  --labelA: #98e0f0;
+  --labelB: #e3d87f;
+  --tableA: #f5f5f5cc;
+  --tableB: #555555cc;
+  --hovergrey: rgba(190, 190, 190, 0.8);
+  --hoverblue: #72d7ee;
+}
+
+/* 
+Button-Transparenz und 
+abgerundete Ecken -> border-radius: 8px;
+werden selbst festgelegt
+*/
+
+h1 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 18pt;
+  letter-spacing: 0.8em;
+}
+
+h2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18pt;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14pt;
+  letter-spacing: 0.2em;
+}
+
+.menu {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18pt;
+  letter-spacing: 0em;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0em;
+  font-style: italic;
+}
+
+label {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14pt;
+  letter-spacing: 0.2em;
+}

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blau);
+  color: var(--darkgrey);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#mytopnav {
+  background-color: var(--blau);
+}
+
+.grid-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 8 columns */
+  gap: 4px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.grid-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-container {
+  padding: 0;
+  justify-content: center;
+}
+
+div.img-container a {
+  /* making the whole div clickable instead of just icon */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-grid-container {
+  background-color: var(--gelb);
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 4px;
+}
+
+#second-grid-container {
+  border-radius: 0 0 8px 8px;
+}
+
+.tableA {
+  background-color: var(--tableA);
+}
+
+.tableB {
+  background-color: var(--tableB);
+}
+
+.tableB:hover {
+  background-color: var(--gelb);
+}
+
+.label {
+  background-color: var(--gelb);
+}
+
+.little-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.impressum, .content, #content-wrap, footer {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for smaller screens */
+    width: 100%;
+  }
+
+  .impressum, .content, #content-wrap, footer {
+    margin-left: 40px;
+  }
+}

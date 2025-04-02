@@ -1,0 +1,81 @@
+body {
+  background-color: var(--lachs);
+  color: var(--darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+.parentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element1 {
+  width: 66%;
+  box-sizing: border-box;
+}
+
+.element2 {
+  width: 66%;
+  height: 400px;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+.element4 {
+  width: 33%;
+  border: 2px;
+  margin-top: 300px;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.element5 {
+  width: 33%;
+  margin-right: 200px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  margin-left: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+a {
+  color: inherit;
+}
+
+.element1, .element2, .element4 {
+  margin-left: 100px;
+}
+
+.addContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blau);
+  border-radius: 8px;
+  background-color: #98e0f0;
+  padding: 14px 20px;
+  color: var(--darkgrey);
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.addContainer:hover {
+  background-color: var(--hoverblue);
+}
+
+@media only screen and (max-width: 600px) {
+  .element1, .element2, .element4 {
+    margin-left: 40px;
+  }
+}

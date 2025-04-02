@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.content-child {
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+p {
+  margin: 16px 0;
+}

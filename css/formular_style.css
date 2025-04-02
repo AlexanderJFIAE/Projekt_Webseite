@@ -1,0 +1,136 @@
+body {
+  background-color: var(--lachs);
+  color: var(--darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+.parentContainerRow2 input[type="text"],
+.parentContainerRow2 select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #98e0f0;
+  padding: 14px 20px;
+  color: var(--darkgrey);
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--hoverblue);
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.parentContainerRow2, .col21, .col23, .parentContainerRow3, .topnav {
+  padding-left: 0;
+}
+
+.parentContainerRow2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+
+.col21 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 200px;
+  box-sizing: border-box;
+  padding-top: 0;
+}
+.col22 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 200px;
+  box-sizing: border-box;
+}
+.col23 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 300px;
+  box-sizing: border-box;
+}
+.col24 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.parentContainerRow3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col31 {
+  width: 25%;
+  background-color: var(--lachs);
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  box-sizing: border-box;
+}
+
+.col32 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.col33 {
+  width: 50%;
+  background-color: var(--lachs);
+  height: 200px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.parentContainerRow2, .parentContainerRow3 {
+  margin-left: 100px;
+}
+
+.topnav {
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .col21 {
+    width: 100%;
+  }
+  .col22 {
+    display: none;
+  }
+  .col23 {
+    width: 100%;
+  }
+  .col24 {
+    width: 100%;
+  }
+
+  .parentContainerRow2, .parentContainerRow3 {
+    margin-left: 40px;
+  }  
+
+  .col24 {
+    padding-left: 0;
+  }
+}

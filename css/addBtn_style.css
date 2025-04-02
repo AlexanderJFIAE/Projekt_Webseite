@@ -1,0 +1,60 @@
+.addBtnContainer {
+  display: flex;
+  margin-right: 1em;
+}
+
+.addBtnContainer a {
+  background-color: var(--offwhite);
+  opacity: 0.8;
+  padding: 1em;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.addBtnContainer a:hover {
+  background-color: var(--hovergrey);
+}
+
+.addBtnContainer a svg {
+  height: 60px;
+}
+
+.addBtnContainer a::before {
+  content: "Add Sneaker";
+  position: absolute;
+  background-color: var(--darkgrey);
+  color: var(--offwhite);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms ease;
+}
+
+.addBtnContainer a::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px var(--darkgrey);
+  transition: 200ms ease;
+}
+
+.addBtnContainer a:hover::before {
+  transform: translateY(-90px) rotate(0);
+  opacity: 1;
+}
+
+.addBtnContainer a:hover::after {
+  transform: translateY(-45px) rotate(0);
+  opacity: 1;
+}
